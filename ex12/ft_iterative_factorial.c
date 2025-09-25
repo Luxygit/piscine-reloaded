@@ -1,37 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 02:14:52 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/25 18:21:37 by dievarga         ###   ########.fr       */
+/*   Created: 2025/09/25 20:14:29 by dievarga          #+#    #+#             */
+/*   Updated: 2025/09/25 20:58:15 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <limits.h>
 
-void	ft_putchar(char c)
+int	ft_iterative_factorial(int nb)
 {
-	write(1, &c, 1);
-}
-
-void	ft_print_numbers(void)
-{
+	int	result;
 	int	i;
 
-	i = '0';
-	while (i <= '9')
+	if (nb < 0)
+		return (0);
+	result = 1;
+	i = 1;
+	while (i <= nb)
 	{
-		ft_putchar(i);
+		if (result > INT_MAX / i)
+			return (0);
+		result = result * i;
 		i++;
 	}
+	return (result);
 }
-/*
+
+#include <stdio.h>
 int	main(void)
-	{
-		ft_print_numbers();
-		return (0);
-	}
-*/
+{
+	printf("%d",ft_iterative_factorial(12));
+}

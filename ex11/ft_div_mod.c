@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 01:31:09 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/25 18:10:20 by dievarga         ###   ########.fr       */
+/*   Created: 2025/09/25 19:03:51 by dievarga          #+#    #+#             */
+/*   Updated: 2025/09/25 20:16:03 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	write(1, &c, 1);
-}
-
-void	ft_print_alphabet(void)
-{
-	int	i;
-
-	i = 'a';
-	while (i <= 'z')
-	{
-		ft_putchar(i);
-		i++;
-	}
+	*div = a / b;
+	*mod = a % b;
 }
 /*
-
+#include <stdio.h>
 int	main(void)
 {
-	ft_print_alphabet();
-	return (0);
-}
-*/
+	int	c = 4;
+	int	d = 2;
+	int	resulte;
+	int	resultf;
+	
+	ft_div_mod(c, d, &resulte, &resultf);
+	printf("la division es %d y el reminder es %d\n", resulte, resultf);
+}*/
