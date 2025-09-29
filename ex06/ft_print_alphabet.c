@@ -6,9 +6,10 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 01:31:09 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/25 18:10:20 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:59:41 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -28,7 +29,6 @@ void	ft_print_alphabet(void)
 	}
 }
 /*
-
 int	main(void)
 {
 	ft_print_alphabet();

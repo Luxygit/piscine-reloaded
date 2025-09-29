@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 11:49:05 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/27 14:08:02 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 00:34:08 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,18 @@ int	ft_strcmp(char *s1, char *s2)
 	while (s1[i] && s2[i])
 	{
 		diff = (s1[i] - s2[i]);
+		if (diff == 0)
+		{
+			s1++;
+			s2++;
+		}
+		else
+		{
+			return (s1[i] - s2[i]);
+		}
 		i++;
 	}
-	return (diff);
+	return (s1[i] - s2[i]);
 }
 /*
 #include <stdio.h>
