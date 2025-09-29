@@ -6,17 +6,17 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 23:17:02 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/27 11:48:45 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:19:31 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i])
-		 i++;
+		i++;
 	return (i);
 }
 /*

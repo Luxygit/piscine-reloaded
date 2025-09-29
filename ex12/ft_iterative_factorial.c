@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 20:14:29 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/25 20:58:15 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:18:25 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ int	ft_iterative_factorial(int nb)
 	}
 	return (result);
 }
-
+/*
 #include <stdio.h>
 int	main(void)
 {
 	printf("%d",ft_iterative_factorial(12));
-}
+}*/

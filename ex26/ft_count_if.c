@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 16:58:15 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 18:19:36 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:12:30 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ int	main(void)
 {
 	char*	elements[] = {"ab", "ba","abb", "ccc", "aa", "a", NULL};
 	
-	printf("this is how many return 1: %d\n", ft_count_if(elements, ft_containsonlya));
+	printf("how many return 1: %d\n", ft_count_if(elements, ft_containsonlya));
 }
 */

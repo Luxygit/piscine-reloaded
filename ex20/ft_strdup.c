@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 12:54:15 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/28 17:33:30 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:25:35 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(char *src)
 {
 	char	*copy;
 	char	*aux;
-	int	len;
+	int		len;
 
 	len = 0;
 	while (src[len])

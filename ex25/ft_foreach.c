@@ -6,11 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 14:49:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 17:43:32 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:34:54 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 14:11:19 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/27 14:49:16 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:19:59 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int	main(int argc, char* argv[])
+int	main(int argc, char *argv[])
 {
 	int	i;
 	int	j;

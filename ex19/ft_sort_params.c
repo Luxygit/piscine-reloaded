@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 14:53:22 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/27 21:20:37 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:24:02 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_print_args(int argc, char **argv)
 		i++;
 	}
 }
-
+/*
 int	main(int argc, char* argv[])
 {
 	int	i;
@@ -76,4 +76,4 @@ int	main(int argc, char* argv[])
 		ft_print_args(argc, argv);
 	}
 	return (0);
-}
+}*/
