@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 22:26:50 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/26 23:16:07 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 10:55:14 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,10 @@ void	ft_putchar(char c)
 
 void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
+	while (*str != '\0')
 	{
-		ft_putchar(str[i]);
-		i++;
+		ft_putchar(*str);
+		str++;
 	}
 }
 /*

@@ -6,11 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 20:27:41 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 00:06:26 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 11:17:22 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ((x) < 0 ? -(x) : (x))
+#define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
 
 /*
 #include <stdio.h>

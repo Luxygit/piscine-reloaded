@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 02:14:52 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/25 18:21:37 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 10:20:20 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	ft_putchar(char c)
 
 void	ft_print_numbers(void)
 {
-	int	i;
+	int	digit;
 
-	i = '0';
-	while (i <= '9')
+	digit = 48;
+	while (digit <= 57)
 	{
-		ft_putchar(i);
-		i++;
+		ft_putchar(digit);
+		digit++;
 	}
 }
 /*

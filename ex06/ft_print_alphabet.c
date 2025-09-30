@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 01:31:09 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 23:59:41 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 10:16:55 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	ft_putchar(char c)
 
 void	ft_print_alphabet(void)
 {
-	int	i;
+	char	a;
 
-	i = 'a';
-	while (i <= 'z')
+	a = 'a';
+	while (a <= 'z')
 	{
-		ft_putchar(i);
-		i++;
+		ft_putchar(a);
+		a++;
 	}
 }
 /*

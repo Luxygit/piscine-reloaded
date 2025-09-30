@@ -6,37 +6,20 @@
 #    By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/29 13:56:25 by dievarga          #+#    #+#              #
-#    Updated: 2025/09/29 19:49:40 by dievarga         ###   ########.fr        #
+#    Updated: 2025/09/30 11:53:12 by dievarga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Compiler and flags
-CC      = cc
-CFLAGS  = -Wall -Wextra -Werror
-
-# Library name
 NAME    = ft_display_file
+SRC     = display_file.c
 
-# Source and object files
-#SRC_DIR = srcs
-SRC     = ft_display_file.c
-#SRCS = $(wildcard srcs/*.c)
-OBJ     = $(SRC:.c=.o)
+all:
+	@gcc -Wall -Wextra -Werror -o $(NAME) $(SRC)
 
-# Default rule
-all: $(NAME)
-
-# Rule to create the library
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-
-# Clean object files
 clean:
-	rm -f $(OBJ)
+	@rm -f *.o
 
-# Clean objects + library
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
-# Rebuild everything
-re: fclean all
+.PHONY: all clean fclean 

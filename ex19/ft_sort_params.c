@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 14:53:22 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 20:24:02 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 11:15:30 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_str(char *str)
+void	print_str(char *str)
 {
 	while (*str)
 	{
@@ -43,7 +43,7 @@ void	ft_print_args(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		ft_print_str(argv[i]);
+		print_str(argv[i]);
 		ft_putchar('\n');
 		i++;
 	}
@@ -73,7 +73,7 @@ int	main(int argc, char* argv[])
 			}
 			i++;
 		}
-		ft_print_args(argc, argv);
+		print_args(argc, argv);
 	}
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 14:11:19 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/29 20:19:59 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/09/30 11:10:59 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,19 @@ void	ft_putchar(char c)
 int	main(int argc, char *argv[])
 {
 	int	i;
-	int	j;
+	char	*str;
 
-	j = 1;
-	if (argc >= 2)
+	i = 1;
+	while (i < argc)
 	{
-		while (j < argc)
+		str = argv[i];
+		while (*str != '\0')
 		{
-			i = 0;
-			while (argv[j][i])
-			{
-				ft_putchar(argv[j][i]);
-				i++;
-			}
-			ft_putchar('\n');
-			j++;
+			ft_putchar(*str);
+			str++;
 		}
+		i++;
+		ft_putchar('\n');
 	}
 	return (0);
 }
