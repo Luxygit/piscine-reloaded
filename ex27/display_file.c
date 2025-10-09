@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:41:41 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 11:47:37 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 11:56:35 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,11 @@ void	ft_display_file(int fd)
 	char	buffer[4096];
 	ssize_t	bytes_read;
 
-	while (bytes_read = read(fs, buffer, sizeof(buffer)) > 0)
+	bytes_read = read(fd, buffer, 4096);
+	while (bytes_read > 0)
 	{
 		write(1, buffer, bytes_read);
+		bytes_read = read(fd, buffer, 4096);
 	}
 }
 
