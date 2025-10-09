@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:41:41 by dievarga          #+#    #+#             */
-/*   Updated: 2025/09/30 11:56:49 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 11:16:57 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_print_error(const char *msg, int len)
 void	ft_display_file(int fd)
 {
 	char	buffer[4096];
-	ssize_t	bytes_read;
+	size_t	bytes_read;
 
 	bytes_read = read(fd, buffer, 4096);
 	while (bytes_read > 0)
